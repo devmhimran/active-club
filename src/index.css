@@ -4,6 +4,9 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+p{
+  margin-bottom: 0 ;
+}
 .home__main__left{
   background-color: #f1f3f4;
 }
@@ -29,6 +32,7 @@
 .card-title{
   margin-top: 25px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .card__button{
   width: 100%;
@@ -38,4 +42,25 @@
   padding: 10px 0;
   border-radius: 5px;
   color: #fff;
+}
+.pro__pic{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.profile__content__detail
+.profile__name{
+  font-size: 26px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.profile__detail{
+  margin-left: 10px;
+  color: #444444;
+  align-items: center;
+}
+.address{
+  margin-left: 10px;
 }
