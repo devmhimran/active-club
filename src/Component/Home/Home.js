@@ -52,9 +52,21 @@ const Home = () => {
                                     <span className='address'>Sydney, Australia</span>
                                 </div>
                             </div>
-
                         </div>
-
+                    </div>
+                    <div className="body__detail d-flex">
+                        <div className='body__detail__content'>
+                            <div className='title'>74 kg</div>
+                            <span>Weight</span>
+                        </div>
+                        <div className='body__detail__content'>
+                            <div className='title'>6.5</div>
+                            <span>Height</span>
+                        </div>
+                        <div className='body__detail__content'>
+                            <div className='title'>24 yrs</div>
+                            <span>Age</span>
+                        </div>
                     </div>
                 </div>
             </div>
