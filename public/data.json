@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "img": "https://i.ibb.co/svDzrDL/pexels-binyamin-mellish-116078.jpg",
+        "name": "Power Lifting",
+        "description": "Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. As in the sport of Olympic weightlifting, it involves the athlete attempting a maximal weight single-lift effort of a barbell loaded with weight plates.",
+        "age": "20-25",
+        "time": 30
+    },
+    {
+        "id": "2",
+        "img": "https://i.ibb.co/9N4ZHPv/pexels-cesar-gale-o-3253498.jpg",
+        "name": "Pull Down Exercise",
+        "description": "The pull-down exercise is a strength training exercise designed to develop the latissimus dorsi muscle. It performs the functions of downward rotation and depression of the scapulae combined with adduction and extension of the shoulder joint.",
+        "age": "20-25",
+        "time": 25
+    },
+    {
+        "id": "3",
+        "img": "https://i.ibb.co/wzn6SJB/pexels-leon-ardho-1552242.jpg",
+        "name": "Battle ropes",
+        "description": "Battle ropes target most of the muscles in your body, including those in your abdominals, shoulders, arms, upper and lower back, and lower body ( 1 , 2 ). If you're looking to target a specific area, you can change how you swing the ropes.",
+        "age": "20-25",
+        "time": 32
+    },
+    {
+        "id": "4",
+        "img": "https://i.ibb.co/qy27tPc/pexels-victor-freitas-791763.jpg",
+        "name": "Low Power Lifting",
+        "description": "Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. As in the sport of Olympic weightlifting, it involves the athlete attempting a maximal weight single-lift effort of a barbell loaded with weight plates.",
+        "age": "20-25",
+        "time": 35
+    },
+    {
+        "id": "5",
+        "img": "https://i.ibb.co/JC4XM2Q/pexels-william-choquette-1954524.jpg",
+        "name": "Running",
+        "description": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot. Running is a type of gait characterized by an aerial phase in which all feet are above the ground (though there are exceptions).[1] This is in contrast to walking.",
+        "age": "20-25",
+        "time": 40
+    },
+    {
+        "id": "6",
+        "img": "https://i.ibb.co/TwVdSjw/pexels-li-sun-2294403.jpg",
+        "name": "High Jump",
+        "description": "Jumping is considered one of the best workouts for improving bone health. Jumping improves your metabolism. It conditions your muscles and helps you burn calories even when you are resting.",
+        "age": "20-25",
+        "time": 45
+    }
+]

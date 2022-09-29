@@ -4,3 +4,38 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+.home__main__left{
+  background-color: #f1f3f4;
+}
+.home__content_container{
+  width: 100%;
+  padding: 60px 0;
+}
+.home__content__heading{
+  font-weight: 600;
+}
+.home__content__heading__sub{
+  font-size: 24px;
+}
+.card{
+  border-radius: 15px !important;
+  border: none !important;
+}
+.card-img{
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+}
+.card-title{
+  margin-top: 25px;
+  font-weight: 600;
+}
+.card__button{
+  width: 100%;
+  background-color: #0096FF;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: #fff;
+}
