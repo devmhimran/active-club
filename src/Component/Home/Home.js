@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ExerciseData from '../ExerciseData/ExerciseData';
 import proPic from '../Assests/pro-pic.jpg';
 import { FiMapPin } from 'react-icons/fi';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
     const [exercise, setExercise] = useState([]);
@@ -23,6 +24,12 @@ const Home = () => {
         return a + b;
     }, 0);
     console.log(sum)
+
+    const handleComplete = (e) => {
+        toast.success('Activity Successfully Completed', {
+            icon: '😊'});
+    }
+
     return (
         <div className='home__main'>
             <div className="row g-0">
@@ -68,8 +75,33 @@ const Home = () => {
                             <span>Age</span>
                         </div>
                     </div>
+                    <div className="break">
+
+                    </div>
+                    <div className="exercise">
+                        <p className='exercise__heading'>Exercise Details</p>
+                        <div className="exercise__time">
+                            <span className='exercise__time__heading'>Exercise</span>
+                            <span className='exercise__time__counter'>{sum} seconds
+                            </span>
+                        </div>
+                    </div>
+                    <div className="break__time">
+                        <div className="break__time__content">
+                            <span className='break__time__content__heading'>Break time</span>
+                            <span className='break__time__content__counter'>{sum} seconds
+                            </span>
+                        </div>
+                    </div>
+                    <div className="acitivity__button">
+                        <button onClick={handleComplete} className='activity__button__main'>Activity Completed</button>
+                    </div>
                 </div>
             </div>
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
         </div>
     );
 };

@@ -34,6 +34,11 @@ p{
   font-weight: 600;
   text-transform: capitalize;
 }
+.age,
+.time__require{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 .card__button{
   width: 100%;
   background-color: #0096FF;
@@ -77,4 +82,52 @@ p{
 .body__detail__content .title{
   font-size: 26px;
   font-weight: 500;
+}
+.exercise{
+  margin: 50px 0 0 0;
+}
+.exercise__heading
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+.exercise__time,
+.break__time__content
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+}
+.exercise__time__heading,
+.break__time__content__heading
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+.exercise__time__counter,
+.break__time__content__counter
+{
+  font-size: 18px;
+  color: #444444;
+}
+.acitivity__button{
+  margin-top: 80px;
+}
+.activity__button__main{
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 20px 0;
+  border-radius: 5px;
+  background-color: #0AA1DD;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+.activity__button__main:hover{
+  background-color: #398AB9;
 }
