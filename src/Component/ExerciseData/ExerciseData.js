@@ -9,7 +9,7 @@ const ExerciseData = ({ allData, add }) => {
                 <div className="card-body">
                     <img src={img} className="card-img" alt="" />
                     <h5 className="card-title">{name}</h5>
-                    <p className="card-text">{description.slice(0, 110)}[...]</p>
+                    <p className="card-text">{description.slice(0, 75)}[...]</p>
                     <p className='age'>For Age : {age}</p>
                     <p className='time__require'>Time required : {time}s</p>
                     <button onClick={()=> add(allData)} className='card__button'>Add to list</button>

@@ -12,10 +12,8 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setExercise(data))
     }, []);
-    // console.log(exercise)
-    console.log(timeCount);
+
     const add = (allData) => {
-        console.log(timeCount);
         const count = [...timeCount, allData.time];
         setTimeCount(count)
 
@@ -23,12 +21,70 @@ const Home = () => {
     let sum = timeCount.reduce(function (a, b) {
         return a + b;
     }, 0);
-    console.log(sum)
-
     const handleComplete = (e) => {
         toast.success('Activity Successfully Completed', {
-            icon: '😊'});
+            icon: '😊'
+        });
     }
+
+    const [buttonOne, setButtonOne] = useState(false);
+    const [buttonTwo, setButtonTwo] = useState(false);
+    const [buttonThree, setButtonThree] = useState(false);
+    const [buttonFour, setButtonFour] = useState(false);
+    const [buttonFive, setButtonFive] = useState(false);
+    const [breakTime, setBreakTime] = useState('');
+
+    const handleButtonOne = () => {
+        setButtonOne(!buttonOne);
+        setButtonTwo(buttonOne);
+        setButtonThree(buttonOne)
+        setButtonFour(buttonOne)
+        setButtonFive(buttonOne)
+        setBreakTime('10')
+        addedBreakTime('10')
+    }
+    const handleButtonTwo = () => {
+        setButtonOne(buttonTwo);
+        setButtonTwo(!buttonTwo);
+        setButtonThree(buttonTwo)
+        setButtonFour(buttonTwo)
+        setButtonFive(buttonTwo)
+        setBreakTime('20')
+        addedBreakTime('20')
+    }
+    const handleButtonThree = () => {
+        setButtonOne(buttonThree);
+        setButtonTwo(buttonThree);
+        setButtonThree(!buttonThree)
+        setButtonFour(buttonThree)
+        setButtonFive(buttonThree)
+        setBreakTime('30')
+        addedBreakTime('30')
+    }
+    const handleButtonFour = () => {
+        setButtonOne(buttonFour);
+        setButtonTwo(buttonFour);
+        setButtonThree(buttonFour)
+        setButtonFour(!buttonFour)
+        setButtonFive(buttonFour)
+        setBreakTime('40')
+        addedBreakTime('40')
+    }
+    const handleButtonFive = () => {
+        setButtonOne(buttonFive);
+        setButtonTwo(buttonFive);
+        setButtonThree(buttonFive)
+        setButtonFour(buttonFive)
+        setButtonFive(!buttonFive)
+        setBreakTime('50')
+        addedBreakTime('50')
+    }
+
+    const addedBreakTime = (time) => {
+        localStorage.setItem('time', time)
+    }
+    const getBreakTime = localStorage.getItem('time');
+
 
     return (
         <div className='home__main'>
@@ -76,7 +132,14 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="break">
-
+                        <p className='break__heading'>Add A Break</p>
+                        <div className="break__content">
+                            <button onClick={handleButtonOne} className={`break__content__btn ${buttonOne ? 'active' : getBreakTime === '10' ? 'active' : ''}`}>10s</button>
+                            <button onClick={handleButtonTwo} className={`break__content__btn ${buttonTwo ? 'active' : getBreakTime === '20' ? 'active' : ''}`}>20s</button>
+                            <button onClick={handleButtonThree} className={`break__content__btn ${buttonThree ? 'active' : getBreakTime === '30' ? 'active' : ''}`}>30s</button>
+                            <button onClick={handleButtonFour} className={`break__content__btn ${buttonFour ? 'active' : getBreakTime === '40' ? 'active' : ''}`}>40s</button>
+                            <button onClick={handleButtonFive} className={`break__content__btn ${buttonFive ? 'active' : getBreakTime === '50' ? 'active' : ''}`}>50s</button>
+                        </div>
                     </div>
                     <div className="exercise">
                         <p className='exercise__heading'>Exercise Details</p>
@@ -89,7 +152,7 @@ const Home = () => {
                     <div className="break__time">
                         <div className="break__time__content">
                             <span className='break__time__content__heading'>Break time</span>
-                            <span className='break__time__content__counter'>{sum} seconds
+                            <span className='break__time__content__counter'>{breakTime ? breakTime : getBreakTime ? getBreakTime : '0'} seconds
                             </span>
                         </div>
                     </div>
